@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2021/10/28 21:54:38.199,=C:\Users\T-Gamer\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/28 21:57:23.600,C:\Users\T-Gamer\Documents\Embarcadero\Studio\Projects\PrincipalSaudacao.pas=C:\Users\T-Gamer\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/28 21:57:23.600,C:\Users\T-Gamer\Documents\Embarcadero\Studio\Projects\PrincipalSaudacao.dfm=C:\Users\T-Gamer\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/10/28 21:57:51.178,C:\Users\T-Gamer\Documents\Embarcadero\Studio\Projects\SaudacaoPuxaSaco.dproj=C:\Users\T-Gamer\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
