@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/10/29 13:23:55.000.739,=C:\Users\Antonio\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/29 13:24:30.000.457,C:\Users\Antonio\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Antonio\Documents\Embarcadero\Studio\Projects\SobreAlterdataPrincipal.pas</Transaction>
+    <Transaction>2021/10/29 13:24:30.000.457,C:\Users\Antonio\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Antonio\Documents\Embarcadero\Studio\Projects\SobreAlterdataPrincipal.dfm</Transaction>
+    <Transaction>2021/10/29 13:24:46.000.566,C:\Users\Antonio\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Antonio\Documents\Embarcadero\Studio\Projects\SobreAEmpresaAlterdata.dproj</Transaction>
+    <Transaction>2021/10/29 13:25:16.000.332,C:\Users\Antonio\Documents\Embarcadero\Studio\Projects\SobreAEmpresaAlterdata.dproj=C:\dsn\Projetos\Estudo_Delphi\SobreAEmpresaAlterdata.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
