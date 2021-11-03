@@ -14,12 +14,20 @@ type
     Button4: TButton;
     Button5: TButton;
     Button6: TButton;
+    Button7: TButton;
+    Button8: TButton;
+    Button9: TButton;
+    Button10: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
+    procedure Button7Click(Sender: TObject);
+    procedure Button8Click(Sender: TObject);
+    procedure Button9Click(Sender: TObject);
+    procedure Button10Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -32,6 +40,23 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.Button10Click(Sender: TObject);
+var
+  UltimoNumero: Integer;
+  NumeroInformado: string;
+begin
+  AllocConsole();
+
+  Write('Digite a placa do carro: ');
+  Read(NumeroInformado);
+
+  UltimoNumero := StrToInt(NumeroInformado[Length(NumeroInformado)]);
+
+  Writeln('Seu carro é final ', UltimoNumero, '. Confira a tabela de pagamentos:');
+  Writeln('Final 1, 2, 3, 4 e 5 - Pagamento em janeiro');
+  Writeln('Final 6, 7, 8, 9 e 0 - Pagamento em fevereiro');
+end;
 
 procedure TForm1.Button1Click(Sender: TObject);
 var
@@ -131,6 +156,63 @@ begin
     FloatToStr(TotalEmGramasRefeicao));
   Writeln('Valo Total ---------------------------------- ',
     FloatToStr((TotalEmGramasRefeicao/100)*PrecoCemGramas));
+end;
+
+procedure TForm1.Button7Click(Sender: TObject);
+var
+   Desconto, SalarioBruto, QuantidadeDeHorasTrabalhadasMensal, ValorHora, DescontoInssPorcento: Double;
+
+begin
+  AllocConsole();
+  Writeln('Informe a quantidade de horas trabalhadas:');
+  Readln(QuantidadeDeHorasTrabalhadasMensal);
+  Writeln('Informe o valor da hora: ');
+  Readln(ValorHora);
+  Writeln('Informe a porcentagem do desconto do inss');
+  Readln(DescontoInssPorcento);
+
+   SalarioBruto := (QuantidadeDeHorasTrabalhadasMensal*ValorHora);
+   Desconto := ((QuantidadeDeHorasTrabalhadasMensal*ValorHora) *
+                (DescontoInssPorcento/100));
+
+  Writeln('========================= Recibo de Pagamento =========================');
+  Writeln(' Salário Bruto: ------------------------------------- ', FloatToStr(SalarioBruto));
+  Writeln(' Desconto Inss: ------------------------------------- ', FloatToStr(Desconto));
+  Writeln(' Sarálio líquido ------------------------------------ ', FloatToStr(SalarioBruto - Desconto));
+end;
+
+procedure TForm1.Button8Click(Sender: TObject);
+var
+  Numero1, Numero2, Numero3: Integer;
+
+begin
+  AllocConsole();
+  Writeln('Pense em uma palavra de três letras. Agora,',
+  'me diga três números entre 65 e 90.');
+  Readln(Numero1);
+  Readln(Numero2);
+  Readln(Numero3);
+
+  Writeln(Char(Numero1)+Char(Numero2)+Char(Numero3));
+
+end;
+
+procedure TForm1.Button9Click(Sender: TObject);
+var
+  ValorInformado: Integer;
+
+begin
+  AllocConsole();
+
+  Writeln('Como está sua sorte? Digite um número:');
+  Readln(ValorInformado);
+  Writeln('[0] = Cara, [1] = Coroa:');
+  if (ValorInformado mod 2 = 0) then
+    Writeln('A sorte deu 0')
+  else
+    Writeln('A sorte deu 1');
+
+
 end;
 
 end.

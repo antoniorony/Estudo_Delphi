@@ -67,4 +67,40 @@ object Form1: TForm1
     TabOrder = 5
     OnClick = Button6Click
   end
+  object Button7: TButton
+    Left = 600
+    Top = 8
+    Width = 169
+    Height = 25
+    Caption = 'Mini departamento pessoal'
+    TabOrder = 6
+    OnClick = Button7Click
+  end
+  object Button8: TButton
+    Left = 8
+    Top = 48
+    Width = 75
+    Height = 25
+    Caption = 'Ilusionista'
+    TabOrder = 7
+    OnClick = Button8Click
+  end
+  object Button9: TButton
+    Left = 104
+    Top = 48
+    Width = 75
+    Height = 25
+    Caption = 'Cara ou coroa'
+    TabOrder = 8
+    OnClick = Button9Click
+  end
+  object Button10: TButton
+    Left = 200
+    Top = 48
+    Width = 83
+    Height = 25
+    Caption = 'Ipva'
+    TabOrder = 9
+    OnClick = Button10Click
+  end
 end
