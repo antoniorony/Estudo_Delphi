@@ -15,7 +15,6 @@ type
     Button5: TButton;
     Button6: TButton;
     Button7: TButton;
-    cmbSelecaoEstado: TComboBox;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -23,7 +22,6 @@ type
     procedure Button5Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
-    procedure cmbSelecaoEstadoChange(Sender: TObject);
   private
     { Private declarations }
   public
@@ -177,8 +175,8 @@ end;
 
 procedure TForm1.Button6Click(Sender: TObject);
 const
-  VALORINICIALMAIUSCULAASC = 65;
-  VALORINICIALMINUSCULAASC = 97;
+  ValorInicialMaiusculaAsc = 65;
+  ValorInicialMinusculaAsc = 97;
 var
   Nome: string;
   Char01, Char02, Char03, Char04, Char05, Char06 : Char;
@@ -194,12 +192,12 @@ begin
   Char05 := Nome[5];
   Char06 := Nome[6];
 
-  Char01 := Char(VALORINICIALMAIUSCULAASC+(Ord(Char01)-VALORINICIALMINUSCULAASC));
-  Char02 := Char(VALORINICIALMAIUSCULAASC+(Ord(Char02)-VALORINICIALMINUSCULAASC));
-  Char03 := Char(VALORINICIALMAIUSCULAASC+(Ord(Char03)-VALORINICIALMINUSCULAASC));
-  Char04 := Char(VALORINICIALMAIUSCULAASC+(Ord(Char04)-VALORINICIALMINUSCULAASC));
-  Char05 := Char(VALORINICIALMAIUSCULAASC+(Ord(Char05)-VALORINICIALMINUSCULAASC));
-  Char06 := Char(VALORINICIALMAIUSCULAASC+(Ord(Char06)-VALORINICIALMINUSCULAASC));
+  Char01 := Char(ValorInicialMaiusculaAsc+(Ord(Char01)-ValorInicialMinusculaAsc));
+  Char02 := Char(ValorInicialMaiusculaAsc+(Ord(Char02)-ValorInicialMinusculaAsc));
+  Char03 := Char(ValorInicialMaiusculaAsc+(Ord(Char03)-ValorInicialMinusculaAsc));
+  Char04 := Char(ValorInicialMaiusculaAsc+(Ord(Char04)-ValorInicialMinusculaAsc));
+  Char05 := Char(ValorInicialMaiusculaAsc+(Ord(Char05)-ValorInicialMinusculaAsc));
+  Char06 := Char(ValorInicialMaiusculaAsc+(Ord(Char06)-ValorInicialMinusculaAsc));
 
   Nome := Char01+Char02+Char03+Char04+Char05+Char06;
 
@@ -212,30 +210,18 @@ const
   P = 80;
   I = 73;
 var
-  lNumeroJogador1, lNumeroJogador2: Integer;
-
+  NumeroJogador1, NumeroJogador2: Integer;
 begin
   AllocConsole();
   Writeln('== jogo do [P] Par ou [I] Ímpar ==');
 
   Writeln('Jogador 1');
-  Readln(lNumeroJogador1);
+  Readln(NumeroJogador1);
 
   Writeln('Jogador 2');
-  Readln(lNumeroJogador2);
-
-
-
+  Readln(NumeroJogador2);
 
   Writeln('Resultado = ')
-end;
-
-procedure TForm1.cmbSelecaoEstadoChange(Sender: TObject);
-VAR
-  lItem: Integer;
-begin
-  lItem := cmbSelecaoEstado.ItemIndex;
-  ShowMessage('' + litem.ToString);
 end;
 
 end.

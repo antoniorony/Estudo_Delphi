@@ -76,18 +76,4 @@ object Form1: TForm1
     TabOrder = 6
     OnClick = Button7Click
   end
-  object cmbSelecaoEstado: TComboBox
-    Left = 554
-    Top = 336
-    Width = 145
-    Height = 21
-    TabOrder = 7
-    OnChange = cmbSelecaoEstadoChange
-    Items.Strings = (
-      'AP'
-      'AM'
-      'CE'
-      'RJ'
-      'PE')
-  end
 end
