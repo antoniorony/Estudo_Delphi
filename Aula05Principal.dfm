@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 385
-  ClientWidth = 725
+  ClientHeight = 488
+  ClientWidth = 1094
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -77,8 +77,8 @@ object Form1: TForm1
     OnClick = Button7Click
   end
   object cmbSelecaoEstado: TComboBox
-    Left = 554
-    Top = 336
+    Left = 890
+    Top = 376
     Width = 145
     Height = 21
     TabOrder = 7

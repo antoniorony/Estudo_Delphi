@@ -212,8 +212,8 @@ const
   P = 80;
   I = 73;
 var
-  lNumeroJogador1, lNumeroJogador2: Integer;
-
+  lSoma, lNumeroJogador1, lNumeroJogador2: Integer;
+  lImparOuPar : Char;
 begin
   AllocConsole();
   Writeln('== jogo do [P] Par ou [I] Ímpar ==');
@@ -224,10 +224,15 @@ begin
   Writeln('Jogador 2');
   Readln(lNumeroJogador2);
 
+  lSoma := (lNumeroJogador1+lNumeroJogador2);
+
+  if (lSoma mod 2 = 0) then
+    lImparOuPar := Char(P)
+  else
+    lImparOuPar := Char(I);
 
 
-
-  Writeln('Resultado = ')
+  Writeln('Resultado = ', lSoma, ', esse número é [', lImparOuPar,']')
 end;
 
 procedure TForm1.cmbSelecaoEstadoChange(Sender: TObject);
